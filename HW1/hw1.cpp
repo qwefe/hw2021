@@ -22,10 +22,12 @@ int main()
 	r = 0;
 	l = -1;
 
-	while (!in.eof())
+	while (in >> x >> y)
+		
 	{
-		in >> x >> y;
+		
 		int d = x * ly - y * lx;
+		
 		if (d >= r) {
 			r = d;
 			rmax.x = x;
